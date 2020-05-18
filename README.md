@@ -1,2 +1,2 @@
-# ConcealPool
-Conceal pool frontend
+# Infinity-Interface
+Infinity pool frontend
