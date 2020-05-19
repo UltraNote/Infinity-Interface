@@ -1,6 +1,6 @@
-var api = "https://infinity.ultranote.org:8119";
+var api = "https://poolhost:port";
 
-var email = "support@ultranote.org";
+var email = "webmaster@mail.com";
 var telegram = "https://t.me/ultranote_official";
 var discord = "https://discord.gg/qHSNkH3";
 
