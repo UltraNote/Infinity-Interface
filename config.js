@@ -2,7 +2,7 @@ var api = "https://poolhost:port";
 
 var email = "webmaster@mail.com";
 var telegram = "https://t.me/ultranote_official";
-var discord = "https://discord.gg/qHSNkH3";
+var discord = "https://discord.gg/AZUqESk";
 
 var marketCurrencies = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR", "{symbol}-CAD"];
 
