@@ -1,16 +1,18 @@
 body {
-  background-color: #282d31; }
+  background-color: #3B3363;
+}
 
 /******************** HEADER *********************/
 .slim-header {
-  background-color: #212529;
-  border-bottom-color: #343a40; }
+  background-color: #3B3363;
+  border: none; 
+  }
 
 .slim-logo a {
   color: #1b84e7; }
 
 .slim-logo span {
-  color: #868ba1; 
+  color: white; 
   font-weight: 400;
 }
 
@@ -68,19 +70,19 @@ body {
 
 /******************** HEADER NAVBAR *******************/
 .slim-navbar {
-  background-color: #212529;
-  border-color: #343a40; }
+  background-color: #3B3363;
+  border-color: #3B3363;
+}
   .slim-navbar .nav-link {
-    background-color: #212529;
-    border-color: #343a40;
-    color: #868ba1; }
+    background-color: #3B3363;
+    color: white; }
     .slim-navbar .nav-link:hover, .slim-navbar .nav-link:focus {
       background-color: #262a2f;
       color: #fff; }
   .slim-navbar .nav-item.active .nav-link {
-    background-color: #262a2f;
+    background-color: #3B3363;
     background-image: none;
-    color: #1b84e7;
+    color: #aaa !important;
     border-width: 1px; }
     .slim-navbar .nav-item.active .nav-link .icon {
       color: #1b84e7; }
@@ -168,8 +170,8 @@ hr {
 
 /******************** DASHBOARD ********************/
 .dash-headline-item-one {
-  background-color: #212529;
-  border-color: #343a40; }
+  background-color: #2C254A; 
+}
   .dash-headline-item-one h1 {
     color: #fff;
     font-weight: 400; }
@@ -177,8 +179,8 @@ hr {
     color: #1b84e7; }
 
 .dash-headline-item-two {
-  background-color: #212529;
-  border-color: #343a40; }
+  background-color: #2C254A;
+  border: none; }
   .dash-headline-item-two h4 {
     color: #fff;
     font-weight: 400; }
@@ -187,8 +189,9 @@ hr {
 
 .dash-headline-item-three,
 .dash-headline-item-four {
-  background-color: #212529;
-  border-color: #343a40; }
+  background-color: #3B3363;  
+  border: none;
+  }
   .dash-headline-item-three h1,
   .dash-headline-item-four h1 {
     color: #fff;
@@ -311,8 +314,9 @@ hr {
 
 /******************** CARD ********************/
 .card:not([class*=" bg-"]) {
-  background-color: #212529;
-  border-color: #343a40; }
+  background-color: #3B3363;
+  border: none;
+}
 
 .card-header,
 .card-footer {

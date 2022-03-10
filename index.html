@@ -48,7 +48,7 @@
           <div class="slim-header-right">
              <div id="section"><span id="statsUpdated"><span tkey="statsUpdated">Stats Updated</span> &nbsp;<i class="fa fa-bolt"></i></span></div>                
              <div id="langSelector">
-                 <select id="newLang" class="form-control">
+                 <select id="newLang" class="form-control input-bg-purple-dark">
                      <option value="en" selected="selected">English</option>
                      <option value="es">Español</option>
                      <option value="fr">Français</option>
@@ -121,7 +121,7 @@
             </div><!-- slim-mainpanel -->          
       </div>
   
-      <div class="slim-footer" id="poolFooter">
+      <div class="bg-purple-dark" id="poolFooter">
         <div class="container">
           <p>Copyright 2019 &copy; All Rights Reserved. UltraNote Network</p>
         </div><!-- container -->
@@ -153,11 +153,11 @@
     // Pulse live update
     function pulseLiveUpdate(){
         var stats_update = document.getElementById('statsUpdated');
-        stats_update.style.transition = 'opacity 100ms ease-out';
-        stats_update.style.opacity = 1;
+        // stats_update.style.transition = 'opacity 100ms ease-out';
+        // stats_update.style.opacity = 1;
         setTimeout(function(){
-            stats_update.style.transition = 'opacity 7000ms linear';
-            stats_update.style.opacity = 0;
+            // stats_update.style.transition = 'opacity 7000ms linear';
+            // stats_update.style.opacity = 0;
         }, 500);
     }
 

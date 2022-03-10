@@ -165,7 +165,7 @@ body {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #868ba1;
+  color: white;
   text-align: left;
   background-color: #f0f2f7; }
 
@@ -208,6 +208,15 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0; }
+
+.input-bg-purple-dark {
+    background: #2C254A !important;
+    border-color: transparent !important;
+}
+
+.bg-purple-dark {
+  background-color: #3B3363;
+}
 
 dt {
   font-weight: 700; }
@@ -3203,7 +3212,7 @@ tbody.collapse.show {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #3B3363;
   border-bottom: 1px solid #ced4da; }
   .card-header:first-child {
     border-radius: calc(3px - 1px) calc(3px - 1px) 0 0; }
@@ -3351,7 +3360,7 @@ tbody.collapse.show {
   text-decoration: none; }
 
 .breadcrumb-item.active {
-  color: #6c757d; }
+  color: white; }
 
 .pagination {
   display: flex;
@@ -7355,7 +7364,7 @@ a:active {
   outline: none !important; }
 
 p {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
 .square-8 {
   display: inline-block;
@@ -12634,7 +12643,6 @@ textarea.parsley-success:focus {
   height: 400px;
   position: relative;
   background-color: #fff;
-  border: 1px solid #ced4da;
   display: flex;
   align-items: flex-end; }
   @media (min-width: 992px) {
@@ -40470,7 +40478,7 @@ body {
 }
 
 #page {
-  padding-bottom: 75px;
+  padding-bottom: 50px;
 }
 
 #telegramBot {
@@ -40544,19 +40552,19 @@ html {
 .headline-item-one .statement-link:focus,
 .dash-headline-item-three .item-label,
 .dash-headline-item-two .item-label {
-    color: #FFA500 !important;
+    color: white !important;
 }
 
 .dash-headline-item-one .statement-link {
-  border: 1px solid #FFA500;
+  border: 1px solid white;
 }
 
 a, .tx-primary {
-  color: #aaa;
+  color: white;
 }
 
 .slim-pagetitle {
-  border-left: 4px solid #FFA500;
+  border: none;
 }
 
 .ct-series-a .ct-area {
@@ -40606,7 +40614,7 @@ a, .tx-primary {
 }
 
 #chartMarketPrice {
-  height: 200px;
+  height: 2em;
 }
 
 #workersStats .status-ok {

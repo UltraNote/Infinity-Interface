@@ -383,7 +383,7 @@ function renderLangSelector() {
     var html = '';
     var numLangs = 0;
     if (langs) {
-        html += '<select id="newLang" class="form-control form-control-sm select2">';
+        html += '<select id="newLang" class="form-control form-control-sm select2 input-bg-purple-dark">';
         for (var lang in langs) {
             var selected = lang == langCode ? ' selected="selected"' : '';
             html += '<option value="' + lang + '"' + selected + '>' + langs[lang] + '</option>';
