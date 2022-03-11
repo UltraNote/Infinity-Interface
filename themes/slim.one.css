@@ -16,6 +16,12 @@ body {
   font-weight: 400;
 }
 
+.lookup-btn-style {
+  background-color: #3B3363;
+  color: white;
+  border: 1px solid white !important;
+}
+
 .search-box .btn {
   background-color: #1b84e7;
   background-image: none; }
@@ -417,8 +423,9 @@ hr {
 
 /******************** FORMS ********************/
 .form-control {
-  background-color: #212529;
-  border-color: #495057; }
+  background-color: #2C254A !important;
+  border: none;
+}
   .form-control:focus {
     background-color: #212529; }
   .form-control:not([value=""]) {
@@ -1084,3 +1091,12 @@ hr {
 .skin-mode-item a.skin-light-mode,
 .skin-mode-item a.skin-dark-mode {
   border: 0; }
+
+.margin-top-65px {
+  margin-top: -65px;
+}
+
+.height-icon-width {
+  height: 65px;
+  width: 65px;
+}
