@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container input-bg-purple-dark pb-5">
     <!-- Market -->
     <div class="slim-pageheader">
         <ol class="breadcrumb slim-breadcrumb">
@@ -9,47 +9,56 @@
     </div><!-- slim-pageheader -->
 
     <!-- Statistics -->
-    <div id="blockStats" class="card card-dash-one mg-b-20">
-        <div class="row no-gutters">
-            <div class="col-lg-3">
-                <div class="dash-content dash-small-info">
-                <div class="icon icon-info">
-                    <span class="fa fa-sm fa-dollar"></span>
-                </div>
-                <label class="tx-primary">XUNI to USD</label>
-                <h2><span id="XUNIToUSD">N/A</h2>
-                </div><!-- dash-content -->
-            </div><!-- col-3 -->
-            <div class="col-lg-3">
-                <div class="dash-content dash-small-info">
-                <div class="icon icon-info">
-                    <span class="fa fa-sm fa-btc"></span>
-                </div>
-                <label class="tx-primary">XUNI to BTC</label>
-                <h2><span id="XUNIToBTC">N/A</span></h2>
-                </div><!-- dash-content -->
-            </div><!-- col-3 -->
-            <div class="col-lg-3">
-                <div class="dash-content dash-small-info">
-                <div class="icon icon-info">
-                    <span class="fa fa-sm fa-trophy"></span>
-                </div>
-                <label class="tx-primary">Marketcap</label><label class="tx-primary" id="marketcapRank"></label>
-                <h2><span id="marketcap">N/A</span></h2>
-                </div><!-- dash-content -->
-            </div><!-- col-3 -->
-            <div class="col-lg-3">
-                <div class="dash-content dash-small-info">
-                <div class="icon icon-info">
-                    <span class="fa fa-sm fa-money"></span>
-                </div>
-                <label class="tx-primary">Daily Volume</label>
-                <h2><span id="dailyVolume">N/A</span></h2>
-                </div><!-- dash-content -->
-            </div><!-- col-3 -->
-        </div><!-- row -->
-    </div>        
-        
+    <div class="row justify-content-center pt-5 mb-5">
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em">
+          <div class="card height-10em border-radius20px">
+            <div class="card-body text-center">
+              <img src="../img/dollars.png" class="margin-top-65px height-icon-width" alt="not found"/>
+              <h2 id="XUNIToUSD" class="text-white font-weight-600">N/A</h2>
+              <br/>
+              <h6 class="text-white">XUNI TO USD</h6>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em">
+          <div class="card height-10em border-radius20px">
+            <div class="card-body text-center">
+              <img src="../img/xuni.png" class="margin-top-65px height-icon-width" alt="not found"/>
+              <h2 id="XUNIToBTC" class="text-white font-weight-600">N/A</h2>
+              <br/>
+              <h6 class="text-white">XUNI TO BTC</h6>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em">
+          <div class="card height-10em border-radius20px">
+            <div class="card-body text-center">
+              <img src="../img/market-cap.png" class="margin-top-65px height-icon-width" alt="not found"/>
+              <h2 class="text-white font-weight-600">N/A</h2>
+              <br/>
+              <h6 class="text-white">Market Cap</h6>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em">
+          <div class="card height-10em border-radius20px">
+            <div class="card-body text-center">
+              <img src="../img/volume.png" class="margin-top-65px height-icon-width" alt="not found"/>
+              <h2 class="text-white font-weight-600">N/A</h2>
+              <br/>
+              <h6 class="text-white">Daily Volume</h6>
+            </div>
+    
+          </div>
+    
+        </div>
+      </div> 
     <div id="chartMarketPrice">
         <canvas id="chartMarketPriceCanvas"></canvas>
         <a class="chart-style"></a>
@@ -57,12 +66,12 @@
 
     <!-- Mining Profit Calculator -->
     <div class="card mg-t-20" id="miningProfitCalc">
-        <div class="card-header tx-medium bd-0 tx-white bg-primary-dark"><span tkey="estimateProfit">Estimate Mining Profits</span></div>
+        <div class="card-header tx-medium bd-0 tx-white input-bg-purple-dark"><span tkey="estimateProfit">Estimate Mining Profits</span></div>
         <div class="card-body" id="calcHashHolder">
             <div class="input-group">
                 <input class="form-control" id="calcHashRate" tplaceholder="enterYourHashrate" placeholder="Enter Your Hash Rate" type="number">
                 <div class="input-group-btn">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="calcHashDropdown">
+                    <button type="button" class="btn dropdown-toggle" style="background:transparent; border:none; color:white" data-toggle="dropdown" id="calcHashDropdown">
                         <span id="calcHashUnit" data-mul="1">KH/s</span> <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-right" role="menu" id="calcHashUnits">

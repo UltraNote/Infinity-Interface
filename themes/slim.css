@@ -214,6 +214,11 @@ ul ol {
     border-color: transparent !important;
 }
 
+.background-trans-borderwhite {
+  background: transparent;
+  border: 1px solid white !important;
+}
+
 .bg-purple-dark {
   background-color: #3B3363;
 }
@@ -11530,7 +11535,7 @@ textarea.parsley-success:focus {
   .toggle-modern .toggle-on + .toggle-blob {
     border: 3px solid #d0d4e7; }
   .toggle-modern .toggle-on.active {
-    background-color: #343a40; }
+    background-color: #3B3363; }
     .toggle-modern .toggle-on.active + .toggle-blob {
       border: 3px solid #343a40; }
 
@@ -40363,16 +40368,16 @@ a.hover-white-8:hover, a.hover-white-8:focus {
 
 #blocksReport .luckBad,
 #blocksReport .orphaned {
-  color: #a60000; 
+  color: white; 
 }
 
 #blocksReport .luckGood, 
 #blocksReport .unlocked {
-  color: #17a600;
+  color: white;
 }
 
 #blocksReport .unlocked td {
-  background-color: #32383d;
+  background-color: #3B3363;
 }
 
 #blocksReport .col7 {
@@ -40380,7 +40385,7 @@ a.hover-white-8:hover, a.hover-white-8:focus {
 }
 
 #blocksReport .unlocked .col7 {
-  color: #17a600;
+  color: white;
 }
 
 #blockStats .luckGood {
@@ -40432,8 +40437,8 @@ a.hover-white-8:hover, a.hover-white-8:focus {
   line-height: 33px;
   height: 45px;
   padding: 6px;
-  background-color: #212529;
-  border: 1px solid #495057;
+  background-color: #2C254A !important;
+  border: none;
 }
 
 #calcHashDropdown {

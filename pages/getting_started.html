@@ -1,5 +1,5 @@
 <!-- Connection Details -->
-<div class="container">
+<div class="container input-bg-purple-dark pb-5">
   <div class="slim-pageheader">
     <ol class="breadcrumb slim-breadcrumb">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -8,34 +8,34 @@
     <h6 class="slim-pagetitle"><span tkey="gettingStarted">Getting Started</span></h6>
   </div><!-- slim-pageheader -->
 
-  <div class="section-wrapper marging-bottom">
+  <div class="section-wrapper marging-bottom input-bg-purple-dark">
     <div class="row">
       <div class="col-sm-6">
         <div class="card card-margin">
-          <div class="card-header tx-medium bd-0 tx-white bg-primary-dark" tkey="connectionDetails">Connection Details
+          <div class="card-header tx-medium bd-0 tx-white input-bg-purple-dark" tkey="connectionDetails">Connection Details
           </div>
           <div class="card-body">
             <div class="stats">
-              <div class="card-separate-text"><i class="fa fa-cloud card-icon"></i> <span tkey="miningPoolHost"
-                  class="card-label">Mining Pool Address</span>: <span id="miningPoolHost"></span></div>
-              <div class="card-separate-text"><i class="fa fa-cubes card-icon"></i> <span tkey="cnAlgorithm"
-                  class="card-label">Algorithm</span>: <span id="cnAlgorithm"></span></div>
+              <div class="card-separate-text text-white"><i class="fa fa-cloud card-icon"></i> <span tkey="miningPoolHost"
+                  class="card-label text-white">Mining Pool Address</span>: <span id="miningPoolHost"></span></div>
+              <div class="card-separate-text text-white"><i class="fa fa-cubes card-icon"></i> <span tkey="cnAlgorithm"
+                  class="card-label text-white">Algorithm</span>: <span id="cnAlgorithm"></span></div>
             </div>
           </div>
         </div>
 
         <div class="card card-margin">
-          <div class="card-header tx-medium bd-0 tx-white bg-primary-dark" tkey="username">Username</div>
+          <div class="card-header tx-medium bd-0 tx-white input-bg-purple-dark" tkey="username">Username</div>
           <div class="card-body">
             <div class="stats">
               <div class="card-separate-text"><i class="fa fa-key card-icon"></i> <span tkey="usernameDesc"
-                  class="card-label">This is your wallet address</span></div>
+                  class="card-label text-white">This is your wallet address</span></div>
               <div class="card-separate-text" id="paymentId"><i class="fa fa-exchange card-icon"></i> <span
-                  tkey="paymentId" class="card-label">Exchange Payment ID</span>: <span><u
+                  tkey="paymentId" class="card-label text-white">Exchange Payment ID</span>: <span><u
                     tkey="address">address</u><span id="paymentIdSeparator">.</span><u
                     tkey="addrPaymentId">paymentID</u></span></div>
               <div class="card-separate-text" id="fixedDiff"><i class="fa fa-wrench card-icon"></i> <span
-                  tkey="fixedDiff" class="card-label">Difficulty locking</span>: <span><u
+                  tkey="fixedDiff" class="card-label text-white">Difficulty locking</span>: <span><u
                     tkey="address">address</u><span id="fixedDiffSeparator">+</span><u tkey="addrDiff">diff</u></span>
               </div>
             </div>
@@ -43,11 +43,11 @@
         </div>
 
         <div class="card card-margin">
-          <div class="card-header tx-medium bd-0 tx-white bg-primary-dark" tkey="password">Password</div>
+          <div class="card-header tx-medium bd-0 tx-white input-bg-purple-dark" tkey="password">Password</div>
           <div class="card-body">
             <div class="stats">
               <div class="card-separate-text"><i class="fa fa-server card-icon"></i> <span tkey="passwordDesc"
-                  class="card-label">This is your worker name</span></div>
+                  class="card-label text-white">This is your worker name</span></div>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
       <!-- Mining ports -->
       <div class="col-sm-6">
         <div class="card card-margin">
-          <div class="card-header tx-medium bd-0 tx-white bg-primary-dark" tkey="miningPorts">Mining Ports</div>
+          <div class="card-header tx-medium bd-0 tx-white input-bg-purple-dark" tkey="miningPorts">Mining Ports</div>
           <div class="card-body">
             <div id="miningPorts" class="table-responsive">
               <table class="table table-hover table-striped">
@@ -86,7 +86,7 @@
     <!-- Configuration Generator -->
     <div class="card card card-margin">
       <!-- Mining Applications and Configuration Generator -->
-      <div class="card-header tx-medium bd-0 tx-white bg-primary-dark" tkey="configGenerator"><span
+      <div class="card-header tx-medium bd-0 tx-white input-bg-purple-dark" tkey="configGenerator"><span
           tkey="configGeneratorDesc">Generate your custom configuration to mine on our pool</span></div>
       <div class="card-body">
         <div id="configGenerator" class="row">
@@ -135,7 +135,7 @@
             </div>
           </div>
           <div class="col-md-12 push-up-5">
-            <button id="generateConf" class="btn btn-primary-outline btn-block mg-b-10 field-margin"
+            <button id="generateConf" class="btn btn-block mg-b-10 field-margin background-trans-borderwhite text-white"
               data-toggle="collapse" href="#xmrstak"><span tkey="generateConfig">Generate configuration</span></button>
           </div>
         </div>
@@ -144,7 +144,7 @@
 
     <!-- Mining Applications -->
     <div class="card card-margin">
-      <div class="card-header tx-medium bd-0 tx-white bg-primary-dark" tkey="miningApps">Mining Applications</div>
+      <div class="card-header tx-medium bd-0 tx-white input-bg-purple-dark" tkey="miningApps">Mining Applications</div>
       <div class="card-body">
         <div id="miningApps" class="table-responsive">
           <table class="table" id="miningAppsTable">
@@ -164,10 +164,10 @@
                 <td class="miningAppTitle">XMR Stak</td>
                 <td>CPU & GPU (AMD/NVIDIA)</td>
                 <td>Easy to use CPU + GPU Mining App</td>
-                <td><a class="btn btn-success-outline" target="_blank"
+                <td><a class="btn background-trans-borderwhite" target="_blank"
                     href="https://github.com/fireice-uk/xmr-stak/releases/latest"><span
                       tkey="download">Download</span></a></td>
-                <td><a class="btn btn-primary-outline" role="button" data-toggle="collapse" href="#xmrstak"
+                <td><a class="btn background-trans-borderwhite" role="button" data-toggle="collapse" href="#xmrstak"
                     aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a>
                 </td>
               </tr>
@@ -198,9 +198,9 @@
                 <td class="miningAppTitle">XMRig</td>
                 <td>CPU</td>
                 <td>Ligthweight but powerful CPU Mining App</td>
-                <td><a class="btn btn-success-outline" target="_blank"
+                <td><a class="btn background-trans-borderwhite" target="_blank"
                     href="https://github.com/xmrig/xmrig/releases/latest"><span tkey="download">Download</span></a></td>
-                <td><a class="btn btn-primary-outline" role="button" data-toggle="collapse" href="#xmrig"
+                <td><a class="btn background-trans-borderwhite" role="button" data-toggle="collapse" href="#xmrig"
                     aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a>
                 </td>
               </tr>
@@ -228,10 +228,10 @@
                 <td class="miningAppTitle">XMRig-AMD</td>
                 <td>OpenCL (AMD)</td>
                 <td>XMRIG version for AMD GPU</td>
-                <td><a class="btn btn-success-outline" target="_blank"
+                <td><a class="btn background-trans-borderwhite" target="_blank"
                     href="https://github.com/xmrig/xmrig-amd/releases/latest"><span tkey="download">Download</span></a>
                 </td>
-                <td><a class="btn btn-primary-outline" role="button" data-toggle="collapse" href="#xmrig-amd"
+                <td><a class="btn background-trans-borderwhite" role="button" data-toggle="collapse" href="#xmrig-amd"
                     aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a>
                 </td>
               </tr>
@@ -259,10 +259,10 @@
                 <td class="miningAppTitle">XMRig-NVIDIA</td>
                 <td>Cuda (Nvidia)</td>
                 <td>XMRIG version for Nvidia GPU</td>
-                <td><a class="btn btn-success-outline" target="_blank"
+                <td><a class="btn background-trans-borderwhite" target="_blank"
                     href="https://github.com/xmrig/xmrig-nvidia/releases/latest"><span
                       tkey="download">Download</span></a></td>
-                <td><a class="btn btn-primary-outline" role="button" data-toggle="collapse" href="#xmrig-nvidia"
+                <td><a class="btn background-trans-borderwhite" role="button" data-toggle="collapse" href="#xmrig-nvidia"
                     aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a>
                 </td>
               </tr>
@@ -290,10 +290,10 @@
                 <td class="miningAppTitle">XMRigCC</td>
                 <td>CPU</td>
                 <td>XMRIG Fork, optimized with remote control</td>
-                <td><a class="btn btn-success-outline" target="_blank"
+                <td><a class="btn background-trans-borderwhite" target="_blank"
                     href="https://github.com/Bendr0id/xmrigCC/releases/latest"><span tkey="download">Download</span></a>
                 </td>
-                <td><a class="btn btn-primary-outline" role="button" data-toggle="collapse" href="#xmrig-cc"
+                <td><a class="btn background-trans-borderwhite" role="button" data-toggle="collapse" href="#xmrig-cc"
                     aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a>
                 </td>
               </tr>

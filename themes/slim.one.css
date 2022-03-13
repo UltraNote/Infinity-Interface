@@ -145,8 +145,9 @@ body {
   border-color: #343a40; }
 
 .section-wrapper {
-  background-color: #212529;
-  border-color: #343a40; }
+  background-color: #2C254A !important;
+  border-color: transparent !important;
+}
 
 .section-title {
   color: #fff;
@@ -681,18 +682,18 @@ hr {
 /******************** TABLE BASIC ********************/
 .table:not([class*=" table-colored"]) thead tr th,
 .table:not([class*=" table-colored"]) thead tr td {
-  background-color: #343a40; }
+  background-color: #3B3363; }
 
 .table:not([class*=" table-colored"]) thead tr th,
 .table:not([class*=" table-colored"]) thead tr td,
 .table:not([class*=" table-colored"]) tbody tr th,
 .table:not([class*=" table-colored"]) tbody tr td {
   border-color: #343a40;
-  color: #868ba1; }
+  color: white; }
 
 .table-striped tbody tr:nth-child(odd) th,
 .table-striped tbody tr:nth-child(odd) td {
-  background-color: #262a2f; }
+  background-color: #3B3363; }
 
 .table-bordered tbody tr:last-child th,
 .table-bordered tbody tr:last-child td {
@@ -864,8 +865,10 @@ hr {
   border-color: #495057; }
 
 .input-group-text {
-  background-color: #1c2023;
-  border-color: #495057; }
+  background: transparent;
+  border: none;
+  color: white;
+}
 
 .bootstrap-tagsinput {
   border-radius: 0;
