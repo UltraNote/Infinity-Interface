@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container input-bg-purple-dark pb-2">
     <div class="slim-pageheader">
         <ol class="breadcrumb slim-breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -7,8 +7,7 @@
         <h6 class="slim-pagetitle"><span tkey="payments">Payments</span></h6>
     </div><!-- slim-pageheader -->
 
-    <!-- Statistics -->
-    <div id="blockStats" class="card card-dash-one mg-b-20">
+    <!-- <div id="blockStats" class="card card-dash-one mg-b-20">
         <div class="row no-gutters">
             <div class="col-lg-3">
                 <div class="dash-content dash-small-info">
@@ -17,8 +16,8 @@
                 </div>
                 <label class="tx-primary" tkey="paymentsTotal">Total Payments</label>
                 <h2><span id="paymentsTotal">N/A</span> <span class="smallText">(<strong><span id="paymentsTotalPaid">N/A</span></strong> <span tkey="minersCount">miners</span>)</span></h2>
-                </div><!-- dash-content -->
-            </div><!-- col-3 -->
+                </div>
+            </div>
             <div class="col-lg-3">
                 <div class="dash-content dash-small-info">
                 <div class="icon icon-info">
@@ -26,8 +25,8 @@
                 </div>
                 <label class="tx-primary" tkey="paymentsMinimum">Minimum Payout</label>
                 <h2><span id="paymentsMinimum">N/A</span></h2>
-                </div><!-- dash-content -->
-            </div><!-- col-3 -->
+                </div>
+            </div>
             <div class="col-lg-3">
                 <div class="dash-content dash-small-info">
                 <div class="icon icon-info">
@@ -35,8 +34,8 @@
                 </div>
                 <label class="tx-primary" tkey="paymentsInterval">Payment Interval</label>
                 <h2><span id="paymentsInterval">N/A</span></h2>
-                </div><!-- dash-content -->
-            </div><!-- col-3 -->
+                </div>
+            </div>
             <div class="col-lg-3">
                 <div class="dash-content dash-small-info">
                 <div class="icon icon-info">
@@ -44,10 +43,59 @@
                 </div>
                 <label class="tx-primary" tkey="paymentsDenomination">Denomination Unit</label>
                 <h2><span id="paymentsDenomination">N/A</span></h2>
-                </div><!-- dash-content -->
-            </div><!-- col-3 -->
-        </div><!-- row -->
-    </div>        
+                </div>
+            </div>
+        </div>
+    </div>         -->
+    <div class="row justify-content-center mt-5 pt-5 mb-5">
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em margin-bottom3rem">
+          <div class="card height-10em border-radius20px">
+            <div class="card-body text-center">
+              <img src="../img/money-bill-solid.png" class="margin-top-65px height-icon-width" alt="not found"/>
+              <h6 class="text-white" id="paymentsTotal">N/A</h6>
+              <br/>
+              <h4 class="text-white font-weight-600">Total Payments</h4>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em margin-bottom3rem">
+          <div class="card height-10em border-radius20px">
+            <div class="card-body text-center">
+              <img src="../img/dollar-sign-solid.png" class="margin-top-65px height-icon-width" alt="not found"/>
+              <h6 class="text-white" id="paymentsMinimum">N/A</h6>
+              <br/>
+              <h4 class="text-white font-weight-600">Minimum Payout</h4>
+            </div>
+          </div>
+    
+        </div>
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em margin-bottom3rem">
+          <div class="card height-10em border-radius20px">
+            <div class="card-body text-center">
+              <img src="../img/clock-solid.png" class="margin-top-65px height-icon-width" alt="not found"/>
+              <h6 class="text-white" id="networkLastReward">N/A</h6>
+              <br/>
+              <h4 class="text-white font-weight-600">Payment Interval</h4>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em margin-bottom3rem">
+          <div class="card height-10em border-radius20px">
+            <div class="card-body text-center">
+              <img src="../img/hashtag-solid.png" class="margin-top-65px height-icon-width" alt="not found"/>
+              <h6 class="text-white" id="currentEffort">Daily Volume</h6>
+              <br/>
+              <h4 class="text-white font-weight-600">Denomination Unit</h4>
+            </div>
+    
+          </div>
+    
+        </div>
+      </div>
 
     <!-- Report -->
     <div class="card push-up-10">
@@ -71,7 +119,7 @@
     </div>
 
     <p class="text-center push-up-10">
-        <button type="button" class="btn btn-primary-outline mg-t-20" id="loadMorePayments"><span tkey="loadMore">Load More</span></button>
+        <button type="button" class="btn mg-t-20 text-white background-trans-borderwhite" id="loadMorePayments"><span tkey="loadMore">Load More</span></button>
     </p>
 </div>
 

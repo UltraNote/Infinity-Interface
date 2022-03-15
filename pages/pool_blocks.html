@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container input-bg-purple-dark pb-1">
     <div class="slim-pageheader">
         <ol class="breadcrumb slim-breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -8,7 +8,7 @@
     </div><!-- slim-pageheader -->
 
     <!-- Statistics -->
-    <div id="blockStats" class="card card-dash-one mg-b-20">
+    <!-- <div id="blockStats" class="card card-dash-one mg-b-20">
         <div class="row no-gutters">
             <div class="col-lg-4">
                 <div class="dash-content dash-small-info">
@@ -17,8 +17,8 @@
                 </div>
                 <label class="tx-primary" tkey="blocksTotal">Total Blocks Mined</label>
                 <h2><span id="blocksTotal">N/A</span> <span class="smallText">(<span id="lastBlockFound">Never</span>)</span></h2>
-                </div><!-- dash-content -->
-            </div><!-- col-3 -->
+                </div>
+            </div>
             <div class="col-lg-4">
                 <div class="dash-content dash-small-info">
                 <div class="icon icon-info">
@@ -26,8 +26,8 @@
                 </div>
                 <label class="tx-primary" tkey="blocksMaturityCount">Maturity Requirement</label>
                 <h2><span id="blocksMaturityCount">N/A</span></h2>
-                </div><!-- dash-content -->
-            </div><!-- col-3 -->
+                </div>
+            </div>
             <div class="col-lg-4">
                 <div class="dash-content dash-small-info">
                 <div class="icon icon-info">
@@ -35,14 +35,52 @@
                 </div>
                 <label class="tx-primary" tkey="averageLuck">Average Luck</label>
                 <h2><span id="averageLuck">N/A</span></h2>
-                </div><!-- dash-content -->
-            </div><!-- col-3 -->
-        </div><!-- row -->
-    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="row justify-content-center mt-5 pt-5 mb-5">
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em margin-bottom3rem">
+          <div class="card height-10em border-radius20px">
+            <div class="card-body text-center">
+              <!-- <span class="margin-top-65px height-icon-width fa fa-sm fa-cubes"></span> -->
+              <img src="../img/cubes-solid.png" class="margin-top-65px height-icon-width" alt="not found"/>
+              <h6 class="text-white"><span id="blocksTotal">N/A</span><span> (<span id="lastBlockFound">Never</span>)</span></h6>
+              <br/>
+              <h4 class="text-white font-weight-600">Blocks Found</h4>
+            </div>
+    
+          </div>
+    
+        </div>
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em margin-bottom3rem">
+          <div class="card height-10em border-radius20px">
+            <div class="card-body text-center">
+              <img src="../img/unlock-solid.png" class="margin-top-65px height-icon-width" alt="not found"/>
+              <h6 class="text-white"><span id="blocksMaturityCount">N/A</span></h6>
+              <br/>
+              <h4 class="text-white font-weight-600">Maturity Requirement</h4>
+            </div>
+          </div>
+    
+        </div>
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em margin-bottom3rem">
+          <div class="card height-10em border-radius20px">
+            <div class="card-body text-center">
+              <img src="../img/chart-line-solid.png" class="margin-top-65px height-icon-width" alt="not found"/>
+              <h6 class="text-white"><span id="averageLuck">N/A</span></h6>
+              <br/>
+              <h4 class="text-white font-weight-600">Average Luck</h4>
+            </div>
+    
+          </div>
+    
+        </div>
+      </div>
         
     <!-- Chart -->
     <div id="blocksChart" class="card padding-15 padding-t-5 padding-b-5 mg-b-20">
-        <h4 id="blocksChartTitle">Blocks found</h4>
+        <h4 class="text-white" id="blocksChartTitle">Blocks found</h4>
         <div class="chart" style="height:200px;">
             <canvas id="blocksChartObj"></canvas>
             <a class="chart-style"></a>
@@ -71,7 +109,7 @@
     </div>
 
     <p class="text-center push-up-10">
-        <button type="button" class="btn btn-primary-outline mg-t-20" id="loadMoreBlocks"><span tkey="loadMore">Load More</span></button>
+        <button type="button" class="btn mg-t-20 lookup-btn-style" style="background-color: #2C254A;" id="loadMoreBlocks"><span tkey="loadMore">Load More</span></button>
     </p>
 </div>
 
