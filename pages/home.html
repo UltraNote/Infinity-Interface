@@ -21,7 +21,7 @@
           <canvas id="chartPoolHashrateCanvas"></canvas>
           <a class="chart-style"></a>
         </div>
-        <div class="dash-item-overlay">
+        <div class="dash-item-overlay" style="background-color: #3B3363;">
           <h1>
             <span class="mediumText" id="poolHashrate">N/A</span>
             <span class="smallText">(<span id="hashPower">0%</span>)
@@ -59,30 +59,32 @@
           <div class="dash-headline-item-three">
             
             <div>
-              <img src="../img/miner.png" class="height-icon-width m-auto" style="margin-top: 0 !important; margin-bottom: 0 !important;" alt="not found"/>
-              <h6 class="mt-4 mb-5" style="color: white;">
+                <h6 class="mt-2 mb-0" style="color: white;">
                 <span id="poolMiners">N/A</span>
                 <span>(<strong>
                     <span id="poolWorkers">N/A</span></strong>
                   <span tkey="workersCount">workers</span>)</span>
               </h6>
               <h4 class="item-label">Miners / Workers</h4>
+              <div>
+                <canvas id="chartMiners"></canvas>
+              </div>
             </div>
-            <!-- <canvas id="chartMiners"></canvas> -->
+            
           </div>
           
         </div>
         <!-- dash-headline-right-bottom-left -->
         <div class="dash-headline-right-bottom-right">
           <div class="dash-headline-item-three">
-            <span id="chartBlocksFound" class="sparkline wd-100p"></span>
+            <!-- <span id="chartBlocksFound" class="sparkline wd-100p"></span> -->
             <div>
-              <img src="../img/blockchain.png" class="height-icon-width m-auto" style="margin-top: 0 !important; margin-bottom: 0 !important;" alt="not found"/>
-              <h6 class="mt-4 mb-5" style="color: white;">
+              <h6 class="mt-1 mb-0" style="color: white;">
                 <span id="blocksTotal">N/A</span>
                 (<span id="poolLastBlockFound">Never</span>)
               </h6>
               <h4 class="item-label">Blocks found</h4>
+              <canvas id="chartBlocksFound"></canvas>
             </div>
           </div>
           <!-- dash-headline-item-three -->
@@ -491,10 +493,8 @@
           yAxes: [
             {
               ticks: {
-              maxTicksLimit: 5,
-              beginAtZero: true,
-              fontSize: 10
-            },
+                  display: false
+                },
               gridLines: {
                 
               }
@@ -502,10 +502,9 @@
           ],
           xAxes: [
               {
-              ticks: {
-              beginAtZero: true,
-              fontSize: 11
-              },
+                ticks: {
+                  display: false
+                },
               gridLines: {
                 
               }
@@ -546,11 +545,9 @@
         scales: {
           yAxes: [
               {
-              ticks: {
-              maxTicksLimit: 5,
-              beginAtZero: true,
-              fontSize: 10
-            },
+                ticks: {
+                  display: false
+                },
               gridLines: {
                 
               }
@@ -559,9 +556,8 @@
           xAxes: [
             {
               ticks: {
-              beginAtZero: true,
-              fontSize: 11
-            },
+                  display: false
+                },
               gridLines: {
                   
               }
@@ -579,58 +575,112 @@
     // $("#chartMiners").html(graphData.miners.values.join());
     // $("#chartBlocksFound").html(blockValues.join());
 
-    // new Chart(document.getElementById('chartMiners'), {
-    //   type: 'bar',
-    //   data: {
-    //     labels: graphData.miners.values,
-    //     datasets: [
-    //       {
-    //         data: graphData.miners.values,
-    //         backgroundColor: 'rgba(255,165,1,1)',
-    //         fill: true,
-    //         borderWidth: 0,
-    //         borderColor: '#FFA500'
-    //       }
-    //     ]
-    //   },
-    //   options: {
-    //     animation: false,
-    //     responsive: true,
-    //     maintainAspectRatio: false,
-    //     legend: {
-    //       display: false,
-    //       labels: {
-    //         display: false
-    //       }
-    //     },
-    //     scales: {
-    //       yAxes: [
-    //           {
-    //             display: false
-    //         //   ticks: {
-    //         //   maxTicksLimit: 5,
-    //         //   beginAtZero: false,
-    //         //   fontSize: 10
-    //         // },
-    //         //   gridLines: {
-                
-    //         //   }
-    //         },         
-    //       ],
-    //       xAxes: [
-    //         {
-    //           ticks: {
-    //           beginAtZero: true,
-    //           fontSize: 11
-    //         },
-    //           gridLines: {
+    new Chart(document.getElementById('chartMiners'), {
+      type: 'bar',
+      data: {
+        labels: graphData.miners.values,
+        datasets: [
+          {
+            data: graphData.miners.values,
+            backgroundColor: 'rgba(255,165,1,1)',
+            fill: true,
+            borderWidth: 0,
+            borderColor: '#FFA500'
+          }
+        ]
+      },
+      options: {
+        animation: false,
+        responsive: true,
+        legend: {
+          display: false,
+          labels: {
+            display: false
+          }
+        },
+        scales: {
+          yAxes: [
+              {
+                ticks: {
+                  display: false
+                },
+              gridLines: {
                   
-    //           }
-    //         }
-    //       ]
-    //     }
-    //   }
-    // });
+              }
+            //   ticks: {
+            //   maxTicksLimit: 5,
+            //   beginAtZero: false,
+            //   fontSize: 10
+            // },
+            //   gridLines: {
+                
+            //   }
+            },         
+          ],
+          xAxes: [
+            {
+              ticks: {
+                  display: false
+            },
+              gridLines: {
+                  
+              }
+            }
+          ]
+        }
+      }
+    });
+
+    new Chart(document.getElementById('chartBlocksFound'), {
+      type: 'bar',
+      data: {
+        labels: blockValues,
+        datasets: [
+          {
+            data: blockValues,
+            backgroundColor: 'rgba(255,165,1,1)',
+            fill: true,
+            borderWidth: 0,
+            borderColor: '#FFA500'
+          }
+        ]
+      },
+      options: {
+        animation: false,
+        responsive: true,
+        legend: {
+          display: false,
+          labels: {
+            display: false
+          }
+        },
+        scales: {
+          yAxes: [
+              {
+                display: false
+            //   ticks: {
+            //   maxTicksLimit: 5,
+            //   beginAtZero: false,
+            //   fontSize: 10
+            // },
+            //   gridLines: {
+                
+            //   }
+            },         
+          ],
+          xAxes: [
+            {
+              ticks: {
+                  display: false
+            },
+              gridLines: {
+                  
+              }
+            }
+          ]
+        }
+      }
+    });
 
     // $('#chartMiners').sparkline('html', {
     //   width: '100%',
