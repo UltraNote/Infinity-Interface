@@ -75,7 +75,7 @@
           <div class="card height-10em border-radius20px">
             <div class="card-body text-center">
               <img src="../img/clock-solid.png" class="margin-top-65px height-icon-width" alt="not found"/>
-              <h6 class="text-white" id="paymentsInterval">N/A</h6>
+              <h6 class="text-white" id="networkLastReward">N/A</h6>
               <br/>
               <h4 class="text-white font-weight-600">Payment Interval</h4>
             </div>
@@ -83,7 +83,7 @@
           </div>
     
         </div>
-        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em">
+        <div class="col-xl-3 col-sm-6 m-t35 margin-top4em margin-bottom3rem">
           <div class="card height-10em border-radius20px">
             <div class="card-body text-center">
               <img src="../img/hashtag-solid.png" class="margin-top-65px height-icon-width" alt="not found"/>
