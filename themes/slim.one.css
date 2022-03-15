@@ -1103,3 +1103,19 @@ hr {
   height: 65px;
   width: 65px;
 }
+
+@media (max-width: 576px) {
+
+  .margin-bottom3rem {
+    margin-bottom: 3rem;
+  }
+
+  .margin-top3rem {
+    margin-top: 3rem !important;
+  }
+
+  .height-200px {
+    height: 200px !important;
+  }
+}
+
