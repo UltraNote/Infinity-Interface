@@ -221,7 +221,7 @@
       <div class="card height-10em border-radius20px">
         <div class="card-body text-center">
           <img src="../img/dollars.png" class="margin-top-65px height-icon-width" alt="not found" />
-          <h2 id="XUNIToUSD" class="text-white font-weight-600">$168,331.09</h2>
+          <h2 id="XUNIToUSD" class="text-white font-weight-600">N/A</h2>
           <br />
           <h6 class="text-white">XUNI TO USD</h6>
         </div>
@@ -233,7 +233,7 @@
       <div class="card height-10em border-radius20px">
         <div class="card-body text-center">
           <img src="../img/xuni.png" class="margin-top-65px height-icon-width" alt="not found" />
-          <h2 id="XUNIToBTC" class="text-white font-weight-600">$168,331.09</h2>
+          <h2 id="XUNIToBTC" class="text-white font-weight-600">N/A</h2>
           <br />
           <h6 class="text-white">XUNI TO BTC</h6>
         </div>
@@ -245,7 +245,7 @@
       <div class="card height-10em border-radius20px">
         <div class="card-body text-center">
           <img src="../img/market-cap.png" class="margin-top-65px height-icon-width" alt="not found" />
-          <h2 class="text-white font-weight-600">N/A</h2>
+          <h2 id="marketCap" class="text-white font-weight-600">N/A</h2>
           <br />
           <h6 class="text-white">Market Cap</h6>
         </div>
@@ -257,7 +257,7 @@
       <div class="card height-10em border-radius20px">
         <div class="card-body text-center">
           <img src="../img/volume.png" class="margin-top-65px height-icon-width" alt="not found" />
-          <h2 class="text-white font-weight-600">N/A</h2>
+          <h2 id="dailyVolume" class="text-white font-weight-600">N/A</h2>
           <br />
           <h6 class="text-white">Daily Volume</h6>
         </div>
@@ -787,22 +787,36 @@
 
   async function getXUNIdata() {
     //var currencies = ["USD", "EUR", "BTC", "LTC", "ETH"]
-    $.get("https://www.exbitron.com/api/v2/peatio/public/markets/xuniusdt/tickers", function (data, status) {
-        if (status == "success") {
-          $(`#XUNIToUSD`).text(parseFloat(data.ticker.last).toFixed(8));
-          USDperXUNI = data.ticker.last;
-        }
-      });
-      $.get("https://www.exbitron.com/api/v2/peatio/public/markets/xunibtc/tickers", function (data, status) {
-        if (status == "success") {
-          $(`#XUNIToBTC`).text(parseFloat(data.ticker.last).toFixed(8));
-        }
-      });
+    var targetVolume = 0;
+    $.get("https://api.xeggex.com/api/v2/ticker/XUNI_USDT", function (data, status) {
+      if (status == "success") {
+        $(`#XUNIToUSD`).text(parseFloat(data.last_price).toFixed(8));
+        targetVolume = data.target_volume
+        USDperXUNI = data.last_price;
+        $(`#dailyVolume`).text(formatUsd(parseFloat(targetVolume).toFixed(2)));
 
-    
+      }
+      $.get("https://api.xeggex.com/api/v2/ticker/BTC_USDT", function (data, status) {
+        if (status == "success") {
+          $(`#XUNIToBTC`).text(parseFloat(USDperXUNI/data.last_price).toFixed(8));
+        }
+      });
+      $.get("https://explorer.ultranote.org/q/supply/", function (data, status) {
+        if (status == "success") {
+          $(`#marketCap`).text(formatUsd(parseFloat(data * USDperXUNI).toFixed(2)));
+        }
+      });
+    });
   }
 
-
+  function formatUsd(price) {
+    if (price >= 1000) {
+      price = price / 1000;
+      return price.toFixed(2) + "K $";
+    } else {
+      return price + " $";
+    }
+  }
 
 
 
